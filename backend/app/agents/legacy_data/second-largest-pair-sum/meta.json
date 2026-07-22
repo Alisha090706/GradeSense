@@ -1,0 +1,11 @@
+{
+  "id": "second-largest-pair-sum",
+  "title": "Second Largest & Pair Sum Counting",
+  "description": "Implement two functions:\n\n1. find_second_largest(nums: list[int]) -> int\n   Return the second largest UNIQUE value in nums.\n   Raise ValueError if nums has fewer than 2 unique values.\n\n2. count_pairs_with_sum(nums: list[int], target: int) -> int\n   Return the number of index pairs (i, j) with i < j such that\n   nums[i] + nums[j] == target.",
+  "functions": [
+    {"name": "find_second_largest", "signature": "find_second_largest(nums: list[int]) -> int"},
+    {"name": "count_pairs_with_sum", "signature": "count_pairs_with_sum(nums: list[int], target: int) -> int"}
+  ],
+  "created_at": "2026-07-12T00:00:00",
+  "timeout_seconds": 5
+}

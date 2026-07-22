@@ -1,0 +1,21 @@
+{
+  "threshold_used": 0.99,
+  "class_mean_similarity": 0.845,
+  "class_stdev_similarity": 0.127,
+  "flagged_pairs": [
+    {
+      "student_a": "student001",
+      "student_b": "student009",
+      "similarity": 1.0
+    },
+    {
+      "student_a": "student002",
+      "student_b": "student010",
+      "similarity": 1.0
+    }
+  ],
+  "unparseable": [
+    "student008"
+  ],
+  "note": "Structural similarity only, based on AST shape with identifiers and literals stripped. Threshold is adaptive (class mean + 1.25 standard deviations, floor 93%, cap 99%) so it accounts for assignments where most correct solutions naturally look alike. This is a starting point for manual review, not evidence of misconduct \u2014 similar submissions can also result from a shared standard approach or in-class pairing on logic."
+}

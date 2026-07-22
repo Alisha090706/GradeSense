@@ -1,0 +1,379 @@
+[
+  {
+    "student_id": "student001",
+    "score": 10.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 5.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 5.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 31.0,
+    "failing_tests": [],
+    "failing_details": [],
+    "feedback": "find_second_largest looks solid \u2014 full marks there. count_pairs_with_sum looks solid \u2014 full marks there."
+  },
+  {
+    "student_id": "student002",
+    "score": 7.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 5.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 2.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 31.5,
+    "failing_tests": [
+      "cps_basic",
+      "cps_duplicates",
+      "cps_last_index_included"
+    ],
+    "failing_details": [
+      {
+        "id": "cps_basic",
+        "category": "count_pairs_with_sum",
+        "error": "expected 2, got 1"
+      },
+      {
+        "id": "cps_duplicates",
+        "category": "count_pairs_with_sum",
+        "error": "expected 3, got 1"
+      },
+      {
+        "id": "cps_last_index_included",
+        "category": "count_pairs_with_sum",
+        "error": "expected 1, got 0"
+      }
+    ],
+    "feedback": "find_second_largest looks solid \u2014 full marks there. count_pairs_with_sum is partially correct (40%), meaning your core approach is right but at least one edge case isn't handled."
+  },
+  {
+    "student_id": "student003",
+    "score": 9.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 4.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 5.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 32.0,
+    "failing_tests": [
+      "fsl_duplicates"
+    ],
+    "failing_details": [
+      {
+        "id": "fsl_duplicates",
+        "category": "find_second_largest",
+        "error": "expected 3, got 5"
+      }
+    ],
+    "feedback": "find_second_largest is partially correct (80%), meaning your core approach is right but at least one edge case isn't handled. count_pairs_with_sum looks solid \u2014 full marks there."
+  },
+  {
+    "student_id": "student004",
+    "score": 7.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 5.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 2.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 30.9,
+    "failing_tests": [
+      "cps_basic",
+      "cps_duplicates",
+      "cps_last_index_included"
+    ],
+    "failing_details": [
+      {
+        "id": "cps_basic",
+        "category": "count_pairs_with_sum",
+        "error": "expected 2, got 4"
+      },
+      {
+        "id": "cps_duplicates",
+        "category": "count_pairs_with_sum",
+        "error": "expected 3, got 6"
+      },
+      {
+        "id": "cps_last_index_included",
+        "category": "count_pairs_with_sum",
+        "error": "expected 1, got 2"
+      }
+    ],
+    "feedback": "find_second_largest looks solid \u2014 full marks there. count_pairs_with_sum is partially correct (40%), meaning your core approach is right but at least one edge case isn't handled."
+  },
+  {
+    "student_id": "student005",
+    "score": 9.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 4.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 5.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 34.2,
+    "failing_tests": [
+      "fsl_too_short_raises"
+    ],
+    "failing_details": [
+      {
+        "id": "fsl_too_short_raises",
+        "category": "find_second_largest",
+        "error": "IndexError: list index out of range"
+      }
+    ],
+    "feedback": "find_second_largest is partially correct (80%), meaning your core approach is right but at least one edge case isn't handled. count_pairs_with_sum looks solid \u2014 full marks there."
+  },
+  {
+    "student_id": "student006",
+    "score": 0.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 0.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 0.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "timeout",
+    "raw_error": "Execution exceeded 5s timeout (likely infinite loop)",
+    "elapsed_ms": 5004.5,
+    "failing_tests": [],
+    "failing_details": [],
+    "feedback": "Your submission did not finish within the time limit, which almost always means an infinite loop \u2014 check that every loop variable you're using as a stopping condition actually gets updated on every iteration. Nothing could be graded past this point, so fix the loop termination logic first and resubmit."
+  },
+  {
+    "student_id": "student007",
+    "score": 9.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 5.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 4.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 36.6,
+    "failing_tests": [
+      "cps_duplicates"
+    ],
+    "failing_details": [
+      {
+        "id": "cps_duplicates",
+        "category": "count_pairs_with_sum",
+        "error": "expected 3, got 0"
+      }
+    ],
+    "feedback": "find_second_largest looks solid \u2014 full marks there. count_pairs_with_sum is partially correct (80%), meaning your core approach is right but at least one edge case isn't handled."
+  },
+  {
+    "student_id": "student008",
+    "score": 0.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 0.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 0.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 32.6,
+    "failing_tests": [
+      "IMPORT"
+    ],
+    "failing_details": [
+      {
+        "id": "IMPORT",
+        "category": "structure",
+        "error": "SyntaxError: expected ':' (student008_submission.py, line 2)"
+      }
+    ],
+    "feedback": "find_second_largest isn't working yet \u2014 none of those checks passed, which suggests a logic issue in that function rather than a small typo. count_pairs_with_sum isn't working yet \u2014 none of those checks passed, which suggests a logic issue in that function rather than a small typo."
+  },
+  {
+    "student_id": "student009",
+    "score": 5.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 0.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 5.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 35.5,
+    "failing_tests": [
+      "fsl_basic",
+      "fsl_duplicates",
+      "fsl_two_elems",
+      "fsl_negatives",
+      "fsl_too_short_raises"
+    ],
+    "failing_details": [
+      {
+        "id": "fsl_basic",
+        "category": "find_second_largest",
+        "error": "missing required function 'find_second_largest'"
+      },
+      {
+        "id": "fsl_duplicates",
+        "category": "find_second_largest",
+        "error": "missing required function 'find_second_largest'"
+      },
+      {
+        "id": "fsl_two_elems",
+        "category": "find_second_largest",
+        "error": "missing required function 'find_second_largest'"
+      },
+      {
+        "id": "fsl_negatives",
+        "category": "find_second_largest",
+        "error": "missing required function 'find_second_largest'"
+      },
+      {
+        "id": "fsl_too_short_raises",
+        "category": "find_second_largest",
+        "error": "missing required function 'find_second_largest'"
+      }
+    ],
+    "feedback": "find_second_largest isn't working yet \u2014 none of those checks passed, which suggests a logic issue in that function rather than a small typo. count_pairs_with_sum looks solid \u2014 full marks there."
+  },
+  {
+    "student_id": "student010",
+    "score": 7.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 5.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 2.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 33.2,
+    "failing_tests": [
+      "cps_basic",
+      "cps_duplicates",
+      "cps_last_index_included"
+    ],
+    "failing_details": [
+      {
+        "id": "cps_basic",
+        "category": "count_pairs_with_sum",
+        "error": "expected 2, got 1"
+      },
+      {
+        "id": "cps_duplicates",
+        "category": "count_pairs_with_sum",
+        "error": "expected 3, got 1"
+      },
+      {
+        "id": "cps_last_index_included",
+        "category": "count_pairs_with_sum",
+        "error": "expected 1, got 0"
+      }
+    ],
+    "feedback": "find_second_largest looks solid \u2014 full marks there. count_pairs_with_sum is partially correct (40%), meaning your core approach is right but at least one edge case isn't handled."
+  },
+  {
+    "student_id": "student011",
+    "score": 10.0,
+    "total_points": 10.0,
+    "breakdown": [
+      {
+        "category": "find_second_largest",
+        "earned": 5.0,
+        "possible": 5.0
+      },
+      {
+        "category": "count_pairs_with_sum",
+        "earned": 5.0,
+        "possible": 5.0
+      }
+    ],
+    "exec_status": "ok",
+    "raw_error": null,
+    "elapsed_ms": 33.7,
+    "failing_tests": [],
+    "failing_details": [],
+    "feedback": "find_second_largest looks solid \u2014 full marks there. count_pairs_with_sum looks solid \u2014 full marks there."
+  }
+]

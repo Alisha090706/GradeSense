@@ -1,0 +1,39 @@
+{
+  "clusters": [
+    {
+      "name": "'count_pairs_with_sum': result too low (possible missed case / off-by-one exclusion)",
+      "explanation": "3 students share this pattern in their submission.",
+      "student_ids": [
+        "student002",
+        "student007",
+        "student010"
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "student_id": "student003",
+      "issue": "Did not de-duplicate values before selecting the second largest"
+    },
+    {
+      "student_id": "student004",
+      "issue": "'count_pairs_with_sum': result too high (possible double-counting / off-by-one)"
+    },
+    {
+      "student_id": "student005",
+      "issue": "Missing input-validation guard in 'find_second_largest' \u2014 crashes with IndexError instead of a clean error"
+    },
+    {
+      "student_id": "student006",
+      "issue": "Infinite loop / non-terminating logic"
+    },
+    {
+      "student_id": "student008",
+      "issue": "Unexpected SyntaxError raised in 'structure'"
+    },
+    {
+      "student_id": "student009",
+      "issue": "Required function missing or misnamed (structure error)"
+    }
+  ]
+}
