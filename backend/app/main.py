@@ -16,7 +16,7 @@ from contextlib import asynccontextmanager
 import logging
 
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import 
 from sqlalchemy import select
 
 from app.core.config import get_settings
@@ -113,6 +113,15 @@ app.include_router(tutor.router, prefix="/api/v1")
 # Legacy/demo — superseded by the real DB-backed routes above. Left mounted for now
 # since it's still handy for exercising the raw agent pipeline without DB setup.
 app.include_router(agents_demo.router, prefix="/api/v1")
+
+
+@app.get("/debug")
+def debug():
+    return {
+        "frontend_origin": settings.FRONTEND_ORIGIN,
+        "env": settings.ENV,
+        "debug": settings.DEBUG,
+    }
 
 
 @app.get("/")
